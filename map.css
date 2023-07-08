@@ -1,0 +1,183 @@
+#logout{ 
+  background-color: #298CF0; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  color: white; 
+  font-size: 18px; 
+  padding: 10px 10px;
+margin: 20px 20px;
+} 
+#logout:hover{ 
+    background-color: #0C61B6; 
+    font-weight: bold; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+
+form{
+
+  text-align: right;
+}
+.navig{
+  background-color: #333;
+  border-radius: 7px;
+}
+.navig ul{
+  overflow:auto;
+}
+.navig li{
+  float: left;
+  list-style: none;
+  margin: 30px 15px;
+}
+.navig li a{
+  padding: 4px 4px;
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+}
+.navig li a:hover, .navig li a.active{
+  color:white ;
+  padding: 20px 10px;
+  
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+ }
+ 
+ input {
+  width: 300px; 
+  height: 40px; 
+  border: none; 
+  border-bottom: 2px solid #ccc; 
+  border-radius: 0; 
+  padding: 5px; 
+  margin: 5px; 
+  outline: none; 
+  transition: border-color 0.3s; 
+ }
+ 
+ /* Change the border color on focus */
+ input:focus {
+  border-color: #4CAF50; 
+ }
+ 
+ /* Increase the size of the placeholder text */
+ input::placeholder {
+  font-size: 16px; 
+ }
+ 
+ /* Increase the size of the input text */
+ input {
+  font-size: 16px; /* Add this to increase the font size */
+ }
+ 
+ /* Style the button elements */
+ button {
+  width: 170px; 
+  height: 50px; 
+  border: none;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  color: white;
+  margin: 5px;
+  outline: none; 
+  transition: background-color 0.3s; 
+ }
+ 
+ /* Change the background color on hover */
+ button:hover {
+  background-color: #3A8E41; 
+ }
+ 
+ /* Increase the size of the button text */
+ button {
+  font-size: 16px; 
+ }
+ 
+ /* Style the distance div */
+ #distance {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin: 10px;
+  text-align: center; 
+ }
+ 
+ /* Style the map div */
+ #map {
+  width: 80%;
+  margin: auto;
+  border: 2px solid #ccc;
+ }
+ 
+ /* Use flexbox to align the elements horizontally */
+ div {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+ }
+
+  footer {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+ }
+ 
+ .info-wrap {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+ 
+ }
+ 
+ .info-details {
+  list-style:none;
+ 
+ }
+ 
+ .info-details li {
+  margin-bottom :10px;
+ 
+ }
+ 
+ .info-details li i{
+  margin-right :10px;
+ 
+ }
+ .info-details li a{
+  color:white ;
+  text-decoration:none;
+ 
+ }
+ .info-details li a:hover{
+  color:#f00 ;
+ 
+ }
+ .social{
+  display:flex;
+ 
+ }
+ .social a{
+  color:white ;
+  text-decoration:none ;
+  margin-right :10px;
+ 
+ }
+ .social a:hover{
+  color:#f00 ;
+ 
+ }
+ 
+  
+  
+    
+  
+  

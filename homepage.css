@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#logout {
+  background-color: #298cf0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin: 20px 20px;
+}
+#logout:hover {
+  background-color: #0c61b6;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  text-align: right;
+}
+.navig {
+  background-color: #333;
+  border-radius: 7px;
+}
+.navig ul {
+  overflow: auto;
+}
+.navig li {
+  float: left;
+  list-style: none;
+  margin: 30px 15px;
+}
+.navig li a {
+  padding: 4px 4px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.navig li a:hover,
+.navig li a.active {
+  color: white;
+  padding: 20px 10px;
+}
+#about_us {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+#about {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  padding: 0 0.5cm; /* This means 0 padding on top and bottom, and 1cm padding on left and right */
+}
+
+#heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  width: 100%;
+  height: 450px;
+}
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item {
+  height: 100%;
+  position: relative;
+}
+.carousel-item img {
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-indicators {
+  bottom: 10px;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+}
+.carousel-indicators .active {
+  background-color: #000;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.info-wrap {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-details {
+  list-style: none;
+}
+
+.info-details li {
+  margin-bottom: 10px;
+}
+
+.info-details li i {
+  margin-right: 10px;
+}
+.info-details li a {
+  color: white;
+  text-decoration: none;
+}
+.info-details li a:hover {
+  color: #f00;
+}
+.social {
+  display: flex;
+}
+.social a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.social a:hover {
+  color: #f00;
+}

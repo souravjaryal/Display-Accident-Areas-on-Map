@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Declare a CSS variable for the main color */
+  :root {
+    --main-color: #298CF0;
+  }
+  
+  body {
+    background-color: #ffffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    /* Use flexbox to create a responsive layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #hd {
+    text-align: center;
+    /* Use the CSS variable for the color */
+    color: var(--main-color);
+  }
+  
+  /* Use a pseudo-element to create a horizontal line */
+  #hd::before {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: var(--main-color);
+    margin: 0 auto 10px;
+  }
+  
+  #line {
+    text-align: center;
+    color: #555;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"]
+  {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .terms a {
+    /* Use the CSS variable for the color */
+    color: var(--main-color);
+    text-decoration: none;
+  }
+  
+  .terms a:hover {
+    text-decoration: underline;
+  }
+  
+  #sub {
+     /* Use the CSS variable for the color */
+     background-color: var(--main-color);
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     color: white;
+     font-size: 18px;
+     padding: 10px;
+     margin-top: 20px;
+   }
+  
+   #sub:hover {
+     /* Use a darker shade of the main color */
+     background-color:#0C61B6 ;
+     font-weight:bold ;
+     box-shadow :0px0px10px rgba(0 ,0 ,0 ,0.3 );
+   }
+   a {
+    /* Use the CSS variable for the color */
+    color: var(--main-color);
+    text-decoration: none;
+  }
+   a#login-link {
+    color: blue; /* Highlighted color for login link */
+  }
+  
+  a#login-link:hover {
+    text-decoration: underline;
+  }
+  
