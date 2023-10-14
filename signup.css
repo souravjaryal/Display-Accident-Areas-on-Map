@@ -8,92 +8,286 @@
   }
   
   body {
-    background-color: #ffffff;
+    background-color: solid #f4f4f4;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: Arial, sans-serif;
-    /* Use flexbox to create a responsive layout */
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
-  #hd {
-    text-align: center;
-    /* Use the CSS variable for the color */
-    color: var(--main-color);
+  .signupform{
+    margin-top: 16px;
+    margin-left: 48px;
+    width: 712px;
+    height: 876px;
+    border: 2px;
+    border-radius: 26px;
+    background-color: #ffffff;
+    box-shadow: 2px 4px 26px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
   }
-  
-  /* Use a pseudo-element to create a horizontal line */
-  #hd::before {
-    content: "";
-    display: block;
-    width: 80%;
-    height: 2px;
-    background-color: var(--main-color);
-    margin: 0 auto 10px;
-  }
-  
+  .signupform div {
+    margin-top: -12px;
+    margin-bottom: 18px; 
+}
+
+.form-container {
+  margin-left: 162px;
+  margin-top: 1px !important;
+
+}
+
+.signupform hr{
+    display: flex;
+    width: 346px;
+    height: 3px;
+    background-color: #298CF0;
+    border: 0px;
+    margin-top: 18px;
+    margin-left: 16px;
+}
+
+#hd {
+  text-align: center;
+  /* Use the CSS variable for the color */
+  color: var(--main-color);
+  font-size: 40px;
+  margin-right: 188px;
+  margin-top: -6px;
+}
+  /*
   #line {
     text-align: center;
-    color: #555;
-  }
+    color: #3f3f3f;
+    font-size: 26px;
+    margin-right: 242px;
+    margin-top: -16px;
+    line-height: 0.6;
+  }*/
+  #line {
+    color:  #424242;
+    font-size: 26px;
+    margin-right: 108px !important;
+    margin-left: 11px;
+    margin-top: -21px;
+    white-space: nowrap; /* Prevents line break */
+}
+.line1{
+  margin-right: 160px;
+  color:  #424242;
+  font-size: 26px;
+  margin-left: 108px;
+  margin-top: -18px !important;
+}
   
   label {
     display: block;
-    margin-top: 10px;
     color: #333;
+    font-size: 21px;
   }
   
   input[type="text"],
   input[type="email"],
   input[type="password"]
   {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
+    width: 380px;
+    height: 52px;
+    padding: 8px;
+    border: 2px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: -18px;
+    margin-top: 0px;
+    font-size: 21px;
+    outline-color: #3498db;
   }
-  
+
+.input-box input{
+  outline: none;
+  position: relative;
+  display: flex;
+  background-color: transparent;
+}
+#name {
+  margin-bottom: -36px;
+}
+#email{
+  margin-bottom: -10px;
+}
+.show, .hide{
+  position: absolute;
+  cursor: pointer;
+  margin-left: 330px;
+  margin-top: -19px;
+  font-size: 24px;
+  color: #888888;
+}
+.hide{
+  display: none;
+}
+#message{
+  position: absolute;
+  top: 536px;
+  color: #3c3c3c;
+  display: none;
+  font-size: 18px;
+  margin-top: -76px;
+  font-weight: 600;
+}
+#message span {
+  font-weight: bold;
+}
+
+  .g-recaptcha{
+    margin-left: 1px;
+    height: 2px;
+    margin-top: 20px !important;
+    margin-bottom: 96px !important;
+    transform: scale(1.254);
+    transform-origin: 0 0;
+  }
+  .terms{
+    font-size: 18px;
+    margin-left: 10px;
+    text-decoration: none;
+  }
   .terms a {
     /* Use the CSS variable for the color */
     color: var(--main-color);
+    cursor: pointer;
+  }
+  
+   a:hover {
     text-decoration: none;
+    color: #0067ce;
+  }
+  input[type="checkbox"] {
+    transform: scale(1.6); /* Adjust this value to increase/decrease the size */
+    cursor: pointer;
+    margin-left: 7px;
   }
   
-  .terms a:hover {
-    text-decoration: underline;
+
+  #submit{
+    /* Use the CSS variable for the color */
+    background-color: var(--main-color);
+    border: none;
+    height: 48px;
+    width: 90px;
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    font-size: 19px;
+    padding: 11px;
+    background-color: #1e70f5;
+    margin-top: 30px;
+    margin-bottom: -9px;
+    margin-left: 280px;
+    font-weight: 548;
+    text-rendering: optimizeLegibility; /* Ensure high-quality text rendering */
   }
+ 
+  #submit:hover {
+    /* Use a darker shade of the main color */
+    background-color:#0381ff ;
+    box-shadow :0px0px10px rgba(0 ,0 ,0 ,0.3 );
+  }
+  .button-container {
+    margin-left: 10px; /* Adjust this value as needed */
+}
   
-  #sub {
-     /* Use the CSS variable for the color */
-     background-color: var(--main-color);
-     border: none;
-     border-radius: 5px;
-     cursor: pointer;
-     color: white;
-     font-size: 18px;
-     padding: 10px;
-     margin-top: 20px;
-   }
-  
-   #sub:hover {
-     /* Use a darker shade of the main color */
-     background-color:#0C61B6 ;
-     font-weight:bold ;
-     box-shadow :0px0px10px rgba(0 ,0 ,0 ,0.3 );
-   }
    a {
     /* Use the CSS variable for the color */
     color: var(--main-color);
     text-decoration: none;
   }
-   a#login-link {
-    color: blue; /* Highlighted color for login link */
+  .account{
+    font-size: 19px;
+    margin-top: -62px !important;
+    text-decoration: none;
   }
-  
-  a#login-link:hover {
-    text-decoration: underline;
+  .account a{
+    text-decoration: none;
   }
-  
+  a [href="login.php"] {
+    color: #0076ec;
+    font-size: 18px;
+  }
+.line{
+  height: 1px;
+  width: 380px;
+  margin-top: 0px !important;
+  margin-bottom: 36px !important;
+  background-color: #a2a2a2;
+}
+.line::before{
+  content: 'Or';
+  position: absolute;
+  margin-bottom: 126px;
+  margin-left: 180px;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: #666666;
+  padding: 0 15px;
+  align-items: center;
+  justify-content: center;
+}
+.signup-options{
+  margin-top: 16px !important;
+  margin-bottom: 10px;
+}
+.google{
+  cursor: pointer;
+  height: 56px;
+  width: 382px;
+  border: 2px solid #bebebe;
+  border-radius: 9px;
+  margin-top: -10px !important;
+  margin-bottom: -10px !important;
+  padding: 20px;
+}
+#google-icon{
+  display: flex;
+  height: 40px;
+  width: 40px;
+  margin-top: -12px;
+}
+.google span{
+  display: flex;
+  font-size: 18px;
+  margin-left: 100px;
+  margin-top: -30px;
+  color: #484848;
+  font-weight: bold;
+  text-rendering: optimizeLegibility; /* Ensure high-quality text rendering */
+}
+.facebook{
+  cursor: pointer;
+  height: 56px;
+  width: 382px;
+  border-radius: 9px;
+  margin-top: 21px !important;
+  padding: 20px;
+  background-color: #1e70f5;
+}
+#facebook-icon{
+  display: flex;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  background: #ffffff;
+  margin-top: -12px;
+  margin-left: 3px;
+  border-radius: 50%; /* This makes the element circular */
+  border: 2px solid #ccc;
+}
+.facebook span{
+  display: flex;
+  font-size: 18px;
+  margin-left: 102px;
+  margin-top: -31px;
+  color: #ffffff;
+  font-weight: bold;
+  text-rendering: optimizeLegibility; /* Ensure high-quality text rendering */
+}

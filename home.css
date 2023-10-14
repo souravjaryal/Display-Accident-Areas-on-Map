@@ -74,32 +74,31 @@ nav ul li a{
   font-size: 34px;
   font-weight: 400;
   position: relative;
-  right: -50px;
+  right: -100px;
   /*text-decoration: none !important;*/
   
 }
 nav ul li a:hover {
   color: #0051d3;
 }
-
-#mapLink.active {
+#homeLink.active {
   color: #0051d3; /* Blue color for active state */
 }
+
 .user-profile{
   position: absolute;
   width: 80px;
   height: 80px;
-  border-radius: 66%;
+  border-radius: 60%;
   cursor: pointer;
   margin-bottom: 10px;
   border-radius: 50%;
   right: 40px;
   margin-top: 10px;
-  /*border: 4px solid transparent;*/
-  border: 2px solid #d6d6d6;
+  border: 4px solid transparent;
 }
 .user-profile:hover{
-  border: 3px solid #d6d6d6;
+  border: 4px solid #d6d6d6;
 }
 /*
 .sub-menu-wrap {
@@ -172,14 +171,12 @@ nav ul li a:hover {
 .user-info img{
   width: 66px;
   height: 66px;
-  border-radius: 66%;
+  border-radius: 50%;
   margin-right: 260px;
   margin-top: 12px;
   object-fit: contain;
-  /*
   overflow: hidden;
-  box-sizing: border-box;*/
-  border: 2px solid #d6d6d6;
+  box-sizing: border-box;
 }
 .user-info:hover {
   background-color: #f4f4f4;
@@ -305,7 +302,7 @@ nav ul li a:hover {
   margin-top: -48px;
 }
 #editProfileForm img{
-  height: 108px;
+  height: 112px;
   width: 112px;
   align-items: center;
   margin-right: 118px;
@@ -480,162 +477,247 @@ label:hover{
   margin-top: -44px;
 }
 
-.search-location{
-  margin-top: 180px;
-  margin-left: 32%;
-}
-.search-location input{
-  width: 430px; 
-  height: 48px;
-  font-size: 16px;
-  border: 2px solid #484848;
-  border-radius: 10px; 
-  margin: 6px;
-  padding: 6px;
-  outline: none;
-  transition: border-color 0.3s; 
- }
- /* Change the border color on focus*/ 
- .search-location input:focus {
-  border: 2px solid #4CAF50; 
- }
- /* Increase the size of the placeholder text **/
- .search-location input::placeholder {
-  font-size: 16px; 
- }
- /* Style the button elements */
- .search-location button{
-  width: 170px; 
-  height: 48px;
-  font-size: 16px;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  background-color: #4CAF50;
-  color: white;
-  transition: background-color 0.3s; 
- }
- /* Change the background color on hover*/
- .search-location button:hover {
-  background-color: #3A8E41; 
- }
-
- .current-location button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px; 
-  height: 48px;
-  margin-left: 63%;
-  margin-top: -53px;
-  font-size: 16px; 
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  background-color: #4CAF50;
-  color: white;
-  transition: background-color 0.3s;
- }
- /* Change the background color on hover*/
- .current-location button:hover {
-  background-color: #3A8E41; 
- }
- .current-location button img {
-  margin-right: 8px; 
-  filter: brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(200deg);
-}
-.origin-destination{
+.journey-banner {
+  text-align: left;
+  margin-left: 48px;
   margin-top: 12px;
-  margin-left: 32%;
 }
-.origin-destination input{
-  width: 206px; 
-  height: 48px;
-  font-size: 16px;
-  outline: none;
-  margin: 6px;
-  border: 2px solid #484848;
-  border-radius: 10px; 
-  padding: 6px;
-  transition: border-color 0.3s;  
- }
- 
- /* Change the border color on focus*/ 
- .origin-destination input:focus {
-  border: 2px solid #4CAF50;
- }
- /* Increase the size of the placeholder text*/
- .origin-destination input::placeholder {
-  font-size: 16px; 
- }
-
- /* Style the button elements*/
- .origin-destination button{
-  width: 170px; 
-  height: 48px;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  transition: background-color 0.3s;
- }
- /* Change the background color on hover*/
- .origin-destination button:hover {
-  background-color: #3A8E41; 
- }
-
- .start-journey button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px; 
-  height: 48px;
-  margin-left: 63%;
-  margin-top: -78px;
-  font-size: 16px; 
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  background-color: #4CAF50;
-  color: white;
-  transition: background-color 0.3s;
- }
- /* Change the background color on hover*/
- .start-journey button:hover {
-  background-color: #3A8E41; 
- }
- .start-journey button img {
-  margin-right: 8px; 
-  filter: brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(200deg);
+.journey-banner h1 {
+  font-size: 66px;
+  font-weight: 1000;
+  color: #434141;
+  margin-top: 200px;
+  margin-left: 60px;
+  font-family: Arial, Helvetica, sans-serif;
 }
- /* Style the distance div */
- #distance {
-  font-size: 20px;
+.journey-banner h3{
+  font-weight: 400;
+  color: #454343;
+  margin-left: 50px;
+  font-size: 48px;
+  margin-left: 66px;
+  margin-top: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.journey-banner img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  margin-top: -60px;
+  margin-left: 1036px;
+  margin-bottom: 250px;
+}
+
+
+
+.carousel {
+  width: 100%;
+  height: 450px;
+}
+.col-centered {
+  float:inline-start;
+  margin: 0 auto;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item {
+  height: 100%;
+  position: relative;
+}
+.carousel-item img {
+  width: 100%;
+  height: 90%;
+  object-fit: contain;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.carousel-indicators {
+  bottom: -20px;
+
+}
+
+.carousel-indicators li {
+  background-color: #dbd9d9;
+}
+.carousel-indicators .active {
+  background-color: #000;
+}
+
+.about {
+  margin-top: -10px;
+}
+.about h1 {
+  text-align: center;
+  font-size: 48px;
   font-weight: bold;
-  color: #4CAF50;
-  margin: 10px;
-  text-align: center; 
- }
- /* Style the map div */
- #map {
-  height: 600px;
-  width: 76%;
-  margin: auto;
-  margin-top: 80px;
-  border: 4px solid #f6f6f6;
- }
+  color: #212020;
+  margin-top: 300px;
+  margin-bottom: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about p {
+  font-size: 36px;
+  color: #363636;
+  line-height: 1.5;
+  padding: 0 0.5cm; /* This means 0 padding on top and bottom, and 0.5cm padding on left and right */
+  margin-bottom: 380px;
+  width: 100%;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
+.contactus{
+  background-color:#e7e7e7;
+  height: 900px;
+  width: 2026px;
+  margin-bottom: -30%;
+  padding-top: 40px;
+  padding-right: auto;
+  /*margin: auto;  Add this line to center the section */
+  /*color: #da532c; #e7e7e7; #f86008; #c46565;*/
+}
+.contactus h1 {
+  text-align: center;
+  padding-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  padding-right: 900px;
+  font-weight: 700;
+  color: #393939;
+}
+.contactus h1 span {
+  color: #8265d0; /* Purple color for "Us!" */
+}
+/* Add this code to align the contact section to the left */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.form{
+  margin-left: 200px;
+  margin-bottom: 100px;
+  padding-top: 36px;
+}
+.form-group{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.form-group input{
+  margin: 14px 0px;
+  padding: 4px 20px;
+  width: 360px;
+  height: 76px;
+  margin-right: 26px;
+  outline: none;
+  margin-top: -10px;
+  font-size: 21px;
+  color: #565656;
+  border: 2px solid #f0f0f0;
+  border-radius: 16px;
+  background-color: rgb(200, 200, 200);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.your-message{
+  height: 300px;
+  width: 736px;
+  margin-left: 6px;
+  background-color: rgb(200, 200, 200);
+  
+}
+.your-message textarea {
+  display: flex;
+  width: 100%;
+  resize:none;
+  outline: none;
+  border: none;
+  color: #565656;
+  /*
+  border-top-left-radius: 10px #e7e7e7;
+  border-top-right-radius:10px #e7e7e7;
+  border-radius:21px;
+  border-radius: 30px 30px 21px 21px; Make upper corners more rounded 
+  */
+  border-radius: 30px;
+  background-color: rgb(200, 200, 200);
+  padding: 10px; /* Add some padding for better spacing */
+  font-size: 22px;
+  overflow: auto;
+}
+
+#sub {
+  background-color: #545353; /* Background color of the button */
+  color: #fff; /* Text color of the button */
+  border: none; /* Remove button border */
+  border-radius: 30px; /* Add some rounded corners */
+  padding: 10px 20px; /* Add padding to the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-size: 21px; /* Adjust font size as needed */
+  margin-left: 276px;
+  margin-top: 48px;
+  height: 60px;
+  width: 220px;
+  transition: max-height 0.5s, box-shadow 0.5s; 
+  box-shadow: 6px 8px 26px rgba(0, 0, 0, 0.2);
+}
+
+#sub:hover {
+  background-color: #247dd6; /* Change background color on hover */
+  font-weight: 400px; /* Add bold font on hover */
+  font-size: 24px;
+  height: 64px;
+  width: 227px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle box-shadow on hover */
+}
+
+
+.contact-image {
+  flex: 1;
+}
+.contact-image img {
+  width: 900px;
+  height: 700px;
+  padding-right: -400px;
+  margin-left: 120px;
+  margin-top: -10px;
+  /*
+  margin-top: -87px;
+  margin-right: -50px;
+  margin-bottom: -19px;
+  */
+}
+
+/* Add media query to ensure responsiveness */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-image,
+  .contact-form {
+    width: 100%;
+    margin-right: 0;
+  }
+}
 
 /*footer*/
 footer {
   background: #212529;
   padding: 20px 0;
-  height: 80%;
-  width: 100%;
 }
 .text-small {
   font-size: 0.9rem;
@@ -706,3 +788,11 @@ footer p.small.text-muted a.text-primary {
 .fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-linkedin:hover, .fa-youtube:hover {
   color: #FF5733; /* Change color on hover */
 }
+
+
+/* ==========================================
+    CUSTOM UTILS CLASSES
+  ========================================== */
+  body, html {
+    height: 99%;
+  }
