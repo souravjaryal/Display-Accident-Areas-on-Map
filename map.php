@@ -57,7 +57,7 @@ if (isset($_SESSION['user_id'])) {
 
 
           <a href="#" class="sub-menu-link" onclick="showEditProfileForm()">
-            <img src="img/profile1.png">
+            <img src="img/profile.png">
             <p>Edit Profile</p>
             <span class="chevron"><i class="fas fa-chevron-right"></i></span>
           </a>
@@ -77,7 +77,7 @@ if (isset($_SESSION['user_id'])) {
 
 
           <a href="#" class="sub-menu-link" onclick="showSettingsForm()">
-            <img src="img/setting1.png">
+            <img src="img/setting.png">
             <p>Settings & Privacy</p>
             <span class="chevron"><i class="fas fa-chevron-right"></i></span>
           </a>
@@ -88,7 +88,7 @@ if (isset($_SESSION['user_id'])) {
           </div>
 
           <a href="#" class="sub-menu-link" onclick="showHelpForm()">
-            <img src="img/help1.png">
+            <img src="img/help.png">
             <p>Help & Support</p>
             <span class="chevron"><i class="fas fa-chevron-right"></i></span>
           </a>
@@ -110,13 +110,13 @@ if (isset($_SESSION['user_id'])) {
           </div>
 
           <a href="#" class="sub-menu-link">
-            <img src="img/feedback1.png">
+            <img src="img/feedback.png">
             <p>Give Feedback</p>
             <span></span>
           </a>
 
           <a href="logout.php" class="sub-menu-link">
-            <img src="img/logout1.png">
+            <img src="img/logout.png">
             <p>Log out</p>
             <span></span>
           </a>
