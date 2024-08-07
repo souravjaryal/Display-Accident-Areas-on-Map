@@ -33,13 +33,13 @@ if (isset($_SESSION['user_id'])) {
   <div class="navbar">
     <nav>
       <div>
-        <a href="home.php" class="logo">
+        <a href="index.php" class="logo">
           <img src="img/journey.png" alt="logo img">
           <h1>Safe Journey</h1>
         </a>
       </div>
       <ul>
-        <li><a href="home.php">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="map.php" id="map Link" class="active">View Map</a></li>
       </ul>
       <img src="<?php echo !empty($user_profile) ? $user_profile : 'img/default-profile.png'; ?>" class="user-profile" alt="Profile Picture" onclick="toggleMenu()">
