@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         $_SESSION['user_name'] = $name; // Store the user's name in the session
                         // this line to set the user ID in the session
                         $_SESSION['user_id'] = mysqli_insert_id($conn);
-                        header("Location: home.php");
+                        header("Location: index.php");
                         exit();
                     } else {
                         echo "Signup failed. Please try again later.";
