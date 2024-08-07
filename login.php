@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     setcookie($cookie_name, $cookie_value, time() + $cookie_duration, "/");
                 }
 
-                header("Location: home.php");
+                header("Location: index.php");
                 exit();
             } else {
                 $msg = "Wrong password. Please try again.";
